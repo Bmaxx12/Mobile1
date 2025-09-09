@@ -90,12 +90,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     print('Username: ${userController.text}');
                     print('Password: ${passwordController.text}');
                   },
-                  child: Text('Log In'),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 57, 70, 255),
                     foregroundColor: Colors.white,
                     shape: StadiumBorder(),
                   ),
+                  child: Text('Log In'),
                 ),
               ),
             ],
@@ -108,6 +108,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
 // Tambahkan kode MyStatefulWidget jika belum ada
 class MyStatefulWidget extends StatelessWidget {
+  const MyStatefulWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
